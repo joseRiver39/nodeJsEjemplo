@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const empleadosRoutes = require('./routes/users');
 
-app.use(express.json);
+app.use(express.json());
 app.use('/api/empleados',empleadosRoutes);
 
 const PORT = process.env.PORT || 3000;
