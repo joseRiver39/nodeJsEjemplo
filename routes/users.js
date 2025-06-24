@@ -71,7 +71,6 @@ router.put('/', (req, res) => { // URL cambiada, ya no toma :id de params
         res.json({ message: 'Empleado actualizado correctamente', id_empleado: parseInt(id_empleado), nombre, departamento, sueldo });
     });
 });
-
 // Eliminar un empleado
 router.delete('/:id', (req, res) => {
     const { id } = req.params;
